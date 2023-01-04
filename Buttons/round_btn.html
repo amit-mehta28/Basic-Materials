@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    
+    .video_button{
+        width:60px;
+        height:60px;
+        padding: 18px 15px;
+        background:#fff;
+        border: none;
+        border-radius:50%; 
+        transition: all 0.3s;
+        margin-bottom: 0px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50% , -50%);
+    }
+    .video_button:hover{
+        background:#EAC07F;
+        top:47%;
+
+    }
+    .video_button:hover .video_btn path{
+        fill: #fff;
+        transition: all 0.3s;
+     }
+     .video_btn{
+        display: block;
+        margin: 0 6.5px;
+     }
+
+</style>
+</head>
+
+<body>
+    
+    <button class="video_button">
+        <svg class="video_btn" xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 21 24" fill="none">
+            <path d="M18.9335 9.70653C20.8123 10.8817 20.8123 13.6183 18.9335 14.7935L5.09085 23.4515C3.09274 24.7013 0.499999 23.2648 0.499999 20.908L0.5 3.59196C0.5 1.2352 3.09274 -0.201254 5.09084 1.04849L18.9335 9.70653Z" fill="#262626"/>
+            </svg>
+    </button>
+</body>
+</html>
+

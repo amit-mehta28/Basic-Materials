@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Button !</title>
+</head>
+<style>
+    button{
+        border: none;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+        position: relative;
+    }
+    .text_button{
+	color: #262626;
+    	letter-spacing: 0.15px;
+    }
+
+    .text_button::after{
+        content: "";
+        width: 0;
+        height: 2px;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.6);
+        left: auto;
+        right: 0;
+        bottom: -3px;
+        transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+    }
+     .text_button:hover:after {
+   	width: 100%;
+    	left: 0;
+    	right: auto;
+    }	
+</style>
+<body>
+    <button class="text_button">Amit Mehta !</button>
+</body>
+</html>
